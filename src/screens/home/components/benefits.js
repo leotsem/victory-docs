@@ -1,41 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
-const RadiumLink = Radium(Link);
 
 // Common
 import { VictorySettings } from "formidable-landers";
 import Icon from "../../../components/icon";
 
 class Benefits extends React.Component {
-  getStyles() {
-    return {
-      link: {
-        borderStyle: "solid",
-        borderWidth: "39px 41px",
-        borderImageSource: `url("./static/btn-border.svg")`,
-        borderImageSlice: "39 41",
-        borderImageRepeat: "repeat stretch",
-        color: VictorySettings.red,
-        display: "inline-block",
-        fontFamily: `'freight-sans-pro', 'Work Sans', 'akkurat', 'Consolas', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Monaco', 'Courier', monospace`,
-        fontSize: "1em",
-        fontWeight: "normal",
-        letterSpacing: "0.2em",
-        lineHeight: 1,
-        textTransform: "uppercase",
-        padding: "30px 24px",
-        width: "100%",
-        transition: "color 300ms ease-out",
-        ":hover": {
-          color: VictorySettings.mud,
-          transition: "color 300ms ease"
-        }
-      }
-    };
-  }
-
   render() {
-    const styles = this.getStyles();
     return (
       <div className="Benefits">
 
@@ -69,9 +40,9 @@ class Benefits extends React.Component {
           </div>
 
           <div className="Benefits-btn">
-            <RadiumLink style={styles.link} to="/docs">
+            <Link className="Benefits-btn-link" to="/docs">
               Get Started <Icon glyph="internal-link" />
-            </RadiumLink>
+            </Link>
           </div>
         </div>
       </div>
