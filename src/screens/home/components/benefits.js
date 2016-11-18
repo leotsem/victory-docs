@@ -1,5 +1,4 @@
 import React from "react";
-import Radium from "radium";
 import { Link } from "react-router";
 const RadiumLink = Radium(Link);
 
@@ -88,4 +87,4 @@ Benefits.defaultProps = {
   style: null
 };
 
-export default Radium(Benefits);
+export default Benefits;
