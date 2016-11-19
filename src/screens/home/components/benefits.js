@@ -53,10 +53,10 @@ class Benefits extends React.Component {
           </div>
         </div>
 
+        <h3 className="u-textCenter">
+          Gallery
+        </h3>
         <div className="u-padding">
-          <h3 className="u-textCenter">
-            Gallery
-          </h3>
           <div className="Grid Grid--gutters Grid--full medium-Grid--fit">
             <div className="Grid-cell u-textCenter">
               <div className="u-paddingSm">
